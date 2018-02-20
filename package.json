@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "a.chan",
   "version": "1.0.0",
-  "description": "a.chan portfolio",
+  "description": "portfolio",
   "author": "Amy Chan",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
+  "homepage": "https://github.com/amyology/portfolio-spa",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
