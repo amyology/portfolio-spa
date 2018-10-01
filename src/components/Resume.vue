@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <h2>Skills</h2>
     <ul id="list">
-      <li v-for="skill in skills">{{ skill }}</li>
+      <li v-for="skill in skills" v-bind:key="skill">{{ skill }}</li>
     </ul>
   </div>
 </template>
@@ -29,6 +29,7 @@ export default {
         'CSS',
         'Git',
         'SQL',
+        'MySQL',
         'PostGreSQL',
         'Unity 3D',
         'Photoshop',
@@ -40,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #list {
-    width: 50%;
-  }
+#list {
+  width: 50%;
+}
 </style>
