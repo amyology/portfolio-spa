@@ -1,7 +1,15 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ blurb }}</p>
+
+    <h2>Say Hello</h2>
+    <p>Email</p>
+
+    <h2>You can find me at</h2>
+
+    <p>LinkedIn</p>
+    <p>GitHub</p>
+    <p>Codepen</p>
   </div>
 </template>
 
@@ -10,8 +18,7 @@ export default {
   name: 'Contact',
   data () {
     return {
-      title: 'Contact',
-      blurb: 'Say Hello'
+      title: 'Contact'
     }
   }
 }

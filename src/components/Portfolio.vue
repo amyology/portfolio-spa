@@ -39,9 +39,22 @@
         <p>Back End Development</p>
         <p>Tools Used: Ruby on Rails, javascript, Bootstrap</p>
       </div>
+    </div>
 
+    <div class="projects">
       <h2>Personal Projects</h2>
 
+      <div class="project">
+        <h3>ColorCrush</h3>
+      </div>
+
+      <div class="project">
+        <h3>Analytics Dashboard</h3>
+      </div>
+
+      <div class="project">
+        <h3>Spark Start</h3>
+      </div>
     </div>
 
   </div>
