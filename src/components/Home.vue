@@ -1,29 +1,21 @@
 <template>
-  <div>
-    <div class="clearfix">
-        <h1>{{ title }}</h1>
-
-        {{ header }}
-      </div>
+  <div class="content home">
+    <div class="title">Hi! My name is Amy Chan</div>
+    <div class="text">
+      I am a full-stack developer based in Chicago. 
+      I am a web developer/designer at heart who took a brief detour to go to law school, 
+      learned some valuable skills while I was there, 
+      and am now back to doing what I love.
     </div>
+  </div>
 </template>
 
-<script type="text/javascript">
+<script>
 export default {
-  name: 'Index',
-  data () {
-    return {
-      title: 'a.chan',
-      header: 'web developer'
-    }
-  }
+  name: 'home'
 }
 </script>
 
 <style lang="scss" scoped>
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 </style>

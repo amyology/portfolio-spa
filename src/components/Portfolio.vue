@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
+  <div class="content portfolio">
+    <div class="title">Portfolio</div>
 
     <h2>Works</h2>
 
@@ -62,12 +62,7 @@
 
 <script type="text/javascript">
 export default {
-  name: 'Portfolio',
-  data () {
-    return {
-      title: 'Portfolio'
-    }
-  }
+  name: 'Portfolio'
 }
 </script>
 

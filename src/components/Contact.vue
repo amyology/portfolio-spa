@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
-
-    <h2>Say Hello</h2>
+  <div class="content">
+    <div class="title">Say Hello</div>
     <p>Email</p>
 
-    <h2>You can find me at</h2>
+    <div class="title">You can find me at</div>
 
     <p>LinkedIn</p>
     <p>GitHub</p>
@@ -15,12 +13,7 @@
 
 <script type="text/javascript">
 export default {
-  name: 'Contact',
-  data () {
-    return {
-      title: 'Contact'
-    }
-  }
+  name: 'Contact'
 }
 </script>
 

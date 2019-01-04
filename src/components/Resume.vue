@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
+  <div class="content resume">
+    <div class="title">Resume</div>
     <h2>Skills</h2>
     <ul id="list">
       <li v-for="skill in skills" v-bind:key="skill">{{ skill }}</li>
@@ -13,7 +13,6 @@ export default {
   name: 'Resume',
   data () {
     return {
-      title: 'Resume',
       skills: [
         'Salesforce Commerce Cloud/Demandware',
         'Ruby/Rails',
