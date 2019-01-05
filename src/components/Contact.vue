@@ -1,13 +1,14 @@
 <template>
-  <div class="content">
-    <div class="title">Say Hello</div>
-    <p>Email</p>
+  <div class="content contact">
+    <div class="title">Contact</div>
 
-    <div class="title">You can find me at</div>
+    <h2>Say Hello</h2>
+    <p><a href="mailto:amychandev@gmail.com">amychandev@gmail.com</a></p>
 
-    <p>LinkedIn</p>
-    <p>GitHub</p>
-    <p>Codepen</p>
+    <h2>You can find me at</h2>
+    <p><a href="https://www.linkedin.com/in/amy-chan" target="_blank">LinkedIn</a></p>
+    <p><a href="http://github.com/amyology" target="_blank">GitHub</a></p>
+    <p><a href="http://codepen.io/amychan" target="_blank">Codepen</a></p>
   </div>
 </template>
 
@@ -18,5 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  h2 {
+    margin-top: 50px;
+  }
 </style>

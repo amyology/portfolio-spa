@@ -1,15 +1,7 @@
 @import './variables';
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $dark-gray;
-}
-
 body {
   margin: 0;
-  font-family: $body-font;
 }
 
 a {
@@ -24,15 +16,22 @@ a {
     left: 0;
     width: 100%;
     height: 20%;
-    background-color: $link-hover-color;
+    background-color: $link-color;
     z-index: -1;
     transition: all 0.2s;
   }
   
   &:hover:after {
     height: 65%;
-    background-color: $link-hover-color;
+    background-color: $link-color;
   }
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
 }
 
 .wrapper {
@@ -55,14 +54,15 @@ a {
 }
 
 .heading {
-  color: rgba(255,255,255,0.8);
+  color: $translucent;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 100px;
   font-family: $title-font;
 }
 
 .subheading {
-  color: rgba(255,255,255,0.9);
+  color: $translucent;
+  font-size: 36px;
 }
 
 .container {
@@ -82,13 +82,14 @@ a {
   padding: 20px 30px;
   overflow: auto;
   
-  &.home {
+  &.home,
+  &.contact {
     align-self: center;
   }
 }
 
 .title {
-  font-size: 36px;
+  font-size: 48px;
   font-family: $title-font;
 }
 
@@ -113,24 +114,24 @@ a {
     display: table;
   }
   
-  &.active {
-    .nav-link-text {
-      opacity: 1;
-      padding-top: 10px;
-      transition: opacity 1s;
-    }
-    
-    .nav-button {
-      background-color: $button-color;
-      height: 35px;
-      border-radius: 10px;
-    }
-  }
-  
   a:hover {
     & + .nav-link-text {
       opacity: 1;
     }
+  }
+}
+
+.router-link-exact-active {
+  .nav-button {
+    background-color: $accent-color;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  & + .nav-link-text {
+    opacity: 1;
+    padding-top: 10px;
+    transition: opacity 1s;
   }
 }
 
@@ -146,13 +147,13 @@ a {
   height: 15px;
   width: 15px;
   margin: 5px 20px 5px 15px;
-  border: 3px solid $button-color;
+  border: 3px solid $accent-color;
   border-radius: 50%;
   transition: all 0.2s;
   
   &:hover {
-    background: $button-color;
-    border: 3px solid $button-color;
+    background: $accent-color;
+    border: 3px solid $accent-color;
   }
 }
 
@@ -160,7 +161,18 @@ a {
 // Media queries
 
 @media only screen and (max-width: 1024px) {
+  .wrapper {
+    display: block;
+  }
 
+  .bg-image {
+    background-size: cover;
+  }
+
+  .nav {
+    align-self: start;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

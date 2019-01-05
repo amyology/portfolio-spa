@@ -5,6 +5,8 @@
     <ul id="list">
       <li v-for="skill in skills" v-bind:key="skill">{{ skill }}</li>
     </ul>
+
+    <p>Download a copy of my resume.</p>
   </div>
 </template>
 
