@@ -3,7 +3,7 @@
     <h1>Resume</h1>
     <p>
       <i class="fas fa-angle-double-down"></i>&nbsp;
-      <a href="/amychanresume.pdf">Download</a> a copy of my resume.
+      <a href="/AmyChanResume.pdf">Download</a> a copy of my resume.
     </p>
 
     <h2>Skills</h2>
