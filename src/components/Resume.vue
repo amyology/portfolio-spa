@@ -1,12 +1,18 @@
 <template>
   <div class="content resume">
-    <div class="title">Resume</div>
+    <h1>Resume</h1>
+    <p>
+      <i class="fas fa-angle-double-down"></i>&nbsp;
+      <a href="/amychanresume.pdf">Download</a> a copy of my resume.
+    </p>
+
     <h2>Skills</h2>
     <ul id="list">
-      <li v-for="skill in skills" v-bind:key="skill">{{ skill }}</li>
+      <li v-for="skill in skills" v-bind:key="skill">
+        <i class="fas fa-angle-right"></i>
+        {{ skill }}
+      </li>
     </ul>
-
-    <p>Download a copy of my resume.</p>
   </div>
 </template>
 
@@ -16,14 +22,15 @@ export default {
   data () {
     return {
       skills: [
-        'Salesforce Commerce Cloud/Demandware',
-        'Ruby/Rails',
+        'Salesforce Commerce Cloud (Demandware)',
         'Javascript',
         'Node.js',
         'Express.js',
         'Vue.js',
         'AngularJS',
         'jQuery',
+        'Ruby',
+        'Ruby on Rails',
         'Sass',
         'C#',
         'HTML',
@@ -42,7 +49,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#list {
-  width: 50%;
-}
+@import '../assets/variables';
+
+  h2 {
+    margin-top: 50px;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    transition: all 0.5s;
+
+    &:hover {
+      margin-left: 15px;
+
+      i {
+        color: $accent-color;
+      }
+    }
+  }
+
+  p:hover i {
+    position: relative;
+    top: 3px;
+  }
 </style>

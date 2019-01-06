@@ -4,7 +4,8 @@ body {
   margin: 0;
 }
 
-a {
+a,
+.link {
   color: $text-color;
   position: relative;
   text-decoration: none;
@@ -27,11 +28,18 @@ a {
   }
 }
 
+h1,
+h2,
+h3 {
+  font-family: $title-font;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
+  font-size: 18px;
 }
 
 .wrapper {
@@ -73,12 +81,12 @@ a {
   transition: flex-grow 1s ease-in-out;
   
   &.embiggen {
-    flex: 3;
+    flex: 2;
   }
 }
 
 .content {
-  flex: 9;
+  flex: 4;
   padding: 20px 30px;
   overflow: auto;
   
@@ -88,11 +96,6 @@ a {
   }
 }
 
-.title {
-  font-size: 48px;
-  font-family: $title-font;
-}
-
 .text {
   margin: 10px 0;
   max-height: 100%;
@@ -100,24 +103,31 @@ a {
 }
 
 .nav {
-  flex: 3;
+  flex: 1;
   align-self: center;
-}
 
-.nav-link {
-  vertical-align: center;
-  position: relative;
-  
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  a:hover {
-    & + .nav-link-text {
-      opacity: 1;
+  .nav-link {
+    vertical-align: center;
+    position: relative;
+    
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
     }
+    
+    a:hover {
+      & + .nav-link-text {
+        opacity: 1;
+      }
+    }
+  }
+
+  .nav-link-text {
+    opacity: 0;
+    float: right;
+    margin: 6px 0;
+    transition: opacity 0.2s;
   }
 }
 
@@ -135,11 +145,29 @@ a {
   }
 }
 
-.nav-link-text {
-  opacity: 0;
-  float: right;
-  margin: 6px 0;
-  transition: opacity 0.2s;
+.mobile-nav {
+  display: none;
+  margin: 25px auto 0;
+  text-align: center;
+
+  .nav-link-text {
+    visibility: hidden;
+
+    .nav-link a:hover + & {
+      visibility: visible;
+    }
+  }
+
+  .router-link-exact-active {
+    .nav-button {
+      height: 15px;
+      width: 35px;
+    }
+
+    & + .nav-link-text {
+      visibility: visible;
+    }
+  }
 }
 
 .nav-button {
@@ -157,8 +185,49 @@ a {
   }
 }
 
+#pic {
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+  
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 50%;
+  }
+}
 
 // Media queries
+@media only screen and (max-width: 767px) {
+  #app {
+    margin-bottom: 25px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  #pic.visible {
+    margin-left: 20%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+
+    .nav-link {
+      display: inline-block;
+    }
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .wrapper {
@@ -167,14 +236,11 @@ a {
 
   .bg-image {
     background-size: cover;
+    height: 50vh;
   }
 
   .nav {
     align-self: start;
     margin-top: 25px;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-
 }

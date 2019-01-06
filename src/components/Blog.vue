@@ -1,6 +1,6 @@
 <template>
   <div class="content blog">
-    <div class="title">Blog</div>
-    <div class="text">Blog posts here.</div>
+    <h1>Blog</h1>
+    <div class="text">No posts yet. =(</div>
   </div>
 </template>
