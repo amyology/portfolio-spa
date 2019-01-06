@@ -152,6 +152,7 @@ h3 {
 
   .nav-link-text {
     visibility: hidden;
+    margin-left: -5px;
 
     .nav-link a:hover + & {
       visibility: visible;
@@ -200,12 +201,15 @@ h3 {
 
 // Media queries
 @media only screen and (max-width: 767px) {
-  #app {
-    margin-bottom: 25px;
+  .header {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
   }
 
   .container {
     display: block;
+    max-height: none;
   }
 
   .content {
