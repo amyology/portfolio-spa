@@ -18,7 +18,6 @@
 
 <script type="text/javascript">
 export default {
-  name: 'Resume',
   data () {
     return {
       skills: [

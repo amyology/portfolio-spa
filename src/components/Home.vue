@@ -13,10 +13,10 @@
 <script type="text/javascript">
   export default {
     methods: {
-      appear: function() {
+      appear: () => {
         document.getElementById('pic').className = 'visible'
       },
-      disappear: function() {
+      disappear: () => {
         document.getElementById('pic').className = ''
       }
     }

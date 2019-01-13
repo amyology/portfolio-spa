@@ -97,7 +97,7 @@
 
   export default {
     methods: {
-      navigate: function(e) {
+      navigate: e => {
         let container = document.getElementsByClassName('container')[0]
         if (e == true && !container.className.includes('embiggen')) {
           container.className += ' embiggen'
