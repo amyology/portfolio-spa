@@ -3,7 +3,7 @@
     <h1>Resume</h1>
     <p>
       <i class="fas fa-angle-double-down"></i>&nbsp;
-      <a href="/AmyChanResume.pdf" target="_blank">Download</a> a copy of my resume.
+      <a href="/other/AmyChanResume.pdf" target="_blank">Download</a> a copy of my resume.
     </p>
 
     <h2>Skills</h2>
@@ -21,7 +21,7 @@ export default {
   data () {
     return {
       skills: [
-        'Salesforce Commerce Cloud (Demandware)',
+        'Salesforce B2C Commerce (Demandware)',
         'Javascript',
         'Node.js',
         'Express.js',

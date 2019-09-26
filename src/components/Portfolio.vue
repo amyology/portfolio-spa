@@ -8,10 +8,20 @@
       <div class="project">
         <h3>
           <i class="fas fa-angle-right"></i>
+          <a href="https://www.arlo.com" target="_blank">Arlo</a>
+        </h3>
+        <p>Front End Development</p>
+        <p>Tools Used: Salesforce B2C Commerce</p>
+      </div>
+
+      <div class="project">
+        <h3>
+          <i class="fas fa-angle-right"></i>
           <a href="https://www.toysrus.dk" target="_blank">Toys R Us (Nordic Countries)</a> /
           <a href="https://www.br.dk" target="_blank">BR Toys</a>
         </h3>
         <p>Front End Development, Back End Development</p>
+        <p>Tools Used: Salesforce B2C Commerce</p>
       </div>
 
       <div class="project">
@@ -20,6 +30,7 @@
           <a href="http://www.elfcosmetics.com" target="_blank">ELF Cosmetics</a>
         </h3>
         <p>Front End Development, Back End Development</p>
+        <p>Tools Used: Salesforce B2C Commerce</p>
       </div>
 
       <div class="project">
@@ -28,6 +39,7 @@
           <a href="https://www.nydj.com" target="_blank">NYDJ</a>
         </h3>
         <p>Front End Development, Back End Development</p>
+        <p>Tools Used: Salesforce B2C Commerce</p>
       </div>
 
       <div class="project">
@@ -37,6 +49,7 @@
           <a href="https://www.janieandjack.com/" target="_blank">Janie and Jack</a>
         </h3>
         <p>Front End Development, Back End Development</p>
+        <p>Tools Used: Salesforce B2C Commerce</p>
       </div>
 
       <div class="project">

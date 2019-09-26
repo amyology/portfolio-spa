@@ -6,7 +6,7 @@
       I am a web developer/designer at heart who took a brief detour to go to law school, 
       learned some valuable skills while I was there, and am now back to doing what I love.
     </div>
-    <img src="/me.png" id="pic" alt="me"/>
+    <img src="/images/me.png" id="pic" alt="me"/>
   </div>
 </template>
 

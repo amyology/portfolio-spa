@@ -27,9 +27,11 @@
       </div>
     </div>
 
-    <button v-if="totalPages > 1" @click="goPage(-1)"><i class="fas fa-arrow-left"></i> </button>
-    {{page}} / {{totalPages}}
-    <button v-if="page < totalPages" @click="goPage(1)"> <i class="fas fa-arrow-right"></i></button>
+    <div v-if="posts.length > 0">
+      <button v-if="totalPages > 1" @click="goPage(-1)"><i class="fas fa-arrow-left"></i></button>
+      {{page}} / {{totalPages}}
+      <button v-if="page < totalPages" @click="goPage(1)"><i class="fas fa-arrow-right"></i></button>
+    </div>
 
   </div>
 </template>

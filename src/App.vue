@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    
     <div class="wrapper">
 
       <div class="bg-image">
@@ -87,7 +88,7 @@
 </template>
 
 <script type="text/javascript">
-  (function(){
+  (() => {
     var redirect = sessionStorage.redirect
     delete sessionStorage.redirect
     if (redirect && redirect != location.href) {
